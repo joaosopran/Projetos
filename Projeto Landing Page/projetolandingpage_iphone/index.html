@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navegacao">
+            <a href="#"><img src="img/logo.png" alt="Logo iphone" class="logo"></a>
+            <ul>
+                <li><a href="#">MAC</a></li>
+                <li><a href="#">IPAD</a></li>
+                <li><a href="#" class="check">IPHONE</a></li>
+                <li><a href="#">AIRPODS</a></li>
+                <li><a href="#">SUPORTE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="circle"></div>
+            <div class="main-text">
+                <img src="iphone13.png" alt="">
+                <h3>Seu novo super poder</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quasi laudantium! Commodi eius dolorem illo in. Et, exercitationem quod! Libero provident repudiandae quasi quae recusandae nisi velit voluptates et voluptatum!</p>
+                <h6>A partir de R$ 6.599,00</h6>
+                <a href="#" class="btn">Comprar</a>
+                <div class="text">
+                    <h5>Escolha a sua cor</h5>
+                </div>
+                <div class="content">
+                    <span id="green" onclick="imgslider('img/green.png'); circleChange('#445c42')"></span>
+                    <span id="pink" onclick="imgslider('img/pink.png'); circleChange('#ffc9cf')"></span>
+                    <span id="blue" onclick="imgslider('img/blue.png'); circleChange('#0b839e')"></span>
+                    <span id="black" onclick="imgslider('img/black.png'); circleChange('#000000')"></span>
+                    <span id="white" onclick="imgslider('img/white.png'); circleChange('#e0dbd7')"></span>
+                    <span id="red" onclick="imgslider('img/red.png'); circleChange('#cf4f68')"></span>
+                </div>
+            </div>
+
+            <div class="main-img">
+                <img src="img/green.png" alt="iphone verde" id="phone">
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript">
+        function imgslider(e) {
+            document.querySelector('#phone').src = e;
+        } // função para mudar o telefone
+
+        function circleChange(color){
+            const circle = document.querySelector('.circle')
+            circle.style.background = color;
+        } // função para mudar a cor atras do telefone
+    </script>
+</body>
+</html>
