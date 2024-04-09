@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <header>
@@ -47,6 +46,16 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; Criado por João Sopran</p> <br>
+        <p>Todos os direitos reservados</p>
+
+        <a href="https://wa.me/5551991105893" class="whatsapp-float" target="_blank">
+            <img src="whatssapp-icon.png" alt="WhatsApp">
+    </footer>
+
+
     <script type="text/javascript">
         function imgslider(e) {
             document.querySelector('#phone').src = e;
@@ -56,6 +65,17 @@
             const circle = document.querySelector('.circle')
             circle.style.background = color;
         } // função para mudar a cor atras do telefone
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                document.querySelector('.whatsapp-float').style.display = "block";
+            } else {
+                document.querySelector('.whatsapp-float').style.display = "none";
+            }
+        }
+
     </script>
 </body>
 </html>
