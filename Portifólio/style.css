@@ -187,7 +187,6 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre {
-
     color: #fff;
 }
 
@@ -268,7 +267,6 @@ section.portifolio .flex {
 
 section.formulario {
     padding: 80px 4%;
-
 }
 
 form {
@@ -396,11 +394,12 @@ footer .line-footer p a {
         padding: 80px 4%;
     }
 
+    /* FOOTER */
+
     footer .interface .logo-footer {
         text-align: center;
         margin-bottom: 20px;
     }
-
 
     footer  .interface .flex .btn-social{
         text-align: center;
